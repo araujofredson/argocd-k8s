@@ -6,7 +6,7 @@ metadata:
     app: creator-api
   namespace: homolog  
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: creator-api
   ports:
