@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:brandlovers-team/cicd-k8s.git
+    repoURL: git@github.com:fastech/cicd-k8s.git
     targetRevision: main
     path: apps/homolog/creator-api
   destination:
