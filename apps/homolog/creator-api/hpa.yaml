@@ -2,7 +2,6 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: creator-api-hpa
-  namespace: homolog
 spec:
   scaleTargetRef:
     apiVersion: apps/v1

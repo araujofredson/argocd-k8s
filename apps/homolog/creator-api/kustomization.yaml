@@ -6,4 +6,4 @@ resources:
   - hpa.yaml
   - ingress.yaml
 images:
-  - name: nginx
+  - name: gcr.io/fastech-homolog/creator-api

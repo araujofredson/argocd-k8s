@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-homolog
+  name: root-app-homolog
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/araujofredson/argocd-k8s.git
+    repoURL: https://github.com/fastech-team/gitops-k8s.git
     targetRevision: main
     path: apps/homolog
   destination:

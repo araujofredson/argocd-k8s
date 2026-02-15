@@ -4,12 +4,12 @@ metadata:
   name: creator-api
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: creator-api=gcr.io/homolog/fastech/creator-api
+    argocd-image-updater.argoproj.io/image-list: creator-api=gcr.io/fastech-homolog/creator-api
     argocd-image-updater.argoproj.io/update-strategy: newest-build
 spec:
   project: default
   source:
-    repoURL: git@github.com:fastech/cicd-k8s.git
+    repoURL: https://github.com/fastech-team/gitops-k8s.git
     targetRevision: main
     path: apps/homolog/creator-api
   destination:

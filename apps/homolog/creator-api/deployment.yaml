@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: creator-api
-  namespace: homolog
   labels:
     app: creator-api
 spec:
@@ -24,7 +23,7 @@ spec:
               app: creator-api 
       containers:
         - name: creator-api
-          image: httpd
+          image: gcr.io/fastech-homolog/creator-api:latest
           ports:
             - containerPort: 80
           readinessProbe:
